@@ -1,0 +1,305 @@
+/* Estilos para la tabla de registros */
+.contact-table {
+    font-family: 'Arial', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 10px;
+    table-layout: auto;
+  }
+  
+  .contact-table td, .contact-table th {
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    font-size: 12px;
+    box-sizing: border-box;
+    display: table-cell;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .contact-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .contact-table tr:hover {
+    background-color: #75c1ff;
+  }
+  
+  .contact-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #00196b;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .search {
+    display: flex;
+  }
+
+  .search input{
+    display: block;
+    margin: 10px;
+  }
+
+  .search button {
+    background-color: #263bf8;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 3px 0px 3px 0px;
+  }
+
+  .filter {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+/* Estilos generales */
+body {
+    background-color: #cff5fa; /* Fondo celeste */
+    color: #333333; /* Texto en negro */
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+/* Estilos del encabezado */
+
+/*header {
+  background-color: #00196b;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+*/
+
+header {
+  background-color: #00196b;
+  padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-text {
+  text-align: center;
+}
+
+.header-nav{
+  display: flex;
+}
+
+.header-nav li{
+  float: left;
+  padding: 25px 0px 0px 0px;
+  list-style: disclosure-closed;
+  color: white;
+  margin-left: 10px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.text-container {
+  margin-left: auto;
+}
+
+.welcome-message {
+  color: #ffffff;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  margin-right: 20px;
+}
+
+h1, h3 {
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+/*
+h1, h3 {
+  text-align: center;
+}
+*/
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.form-h2 {
+  display: block;
+  font-size: 3.5em;
+  margin-block-start: -2.17em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+h3 {
+  color: white;
+  font-size: small;
+}
+
+/* Estilos de los botones */
+
+.forms-button {
+  background-color: #263bf8;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+
+button:hover {
+  background-color: #8FDDE7; /* Fondo celeste al pasar el mouse */
+  color: #ffffff;
+}
+  
+/* Estilos de los enlaces */
+a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 0px;
+}
+  
+a:hover {
+  color: #fae105; /* Enlaces al pasar el mouse */
+}
+
+/* Estilos del logo 
+.logo {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: none;
+  padding-bottom: 30px;
+}
+
+
+
+th {
+  display: flex;
+  vertical-align: inherit;
+  font-weight: bold;
+  text-align: -internal-center;
+}
+
+td {
+  display: table;
+  vertical-align: text-bottom;
+}
+
+
+/* Estilos del formulario de registro */
+.form-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container label,
+.form-container input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Estilos para formularios de contactos*/
+.contactForm-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactForm-container label,
+.contactForm-container input {
+  display: flex;
+  margin: 10px;
+  padding-right: 15em;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+input[type="text" i] {
+  padding: 1px 2px;
+}
+
+/* Reportes Excel y CSV */
+.reporteContainer {
+  display: flex;
+}
+
+.reporteContainer a{
+  color: black;
+  margin-right: 1em;
+}
+
+@media screen and (max-width: 767px) {
+  /* Estilos para dispositivos móviles */
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  nav ul {
+    margin-top: 20px;
+  }
+
+  form {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .form-h2 {
+    margin-block-start: -1.17em;
+    font-size: 2.5em;
+  }
+}

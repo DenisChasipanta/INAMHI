@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class='contactForm-container'>
+    <h2 class="form-h2">Crear nuevo registro</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_table }}
+        <button type="submit" class="forms-button">Guardar</button>
+    </form>
+</div>
+{% endblock %}
